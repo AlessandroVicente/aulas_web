@@ -1,0 +1,50 @@
+
+.container-main{    
+    display: flex; 
+    flex-flow: column nowrap;
+    justify-content: space-between;   
+    height: 540px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color:lightcoral;
+    padding: 32px;          
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+                          
+}
+
+.box-color{
+    background-color: mediumturquoise;
+    text-align: center;
+    color:antiquewhite;
+    padding: 16px;    
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 350px;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;     
+    width: 70%;
+    height: 350px;  
+}
+
+img{
+    height: 100px; 
+    width: 30%;   
+}
