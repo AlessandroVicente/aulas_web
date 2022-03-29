@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 5</title>
+
+    <!-- Favico -->
+    <link rel="shortcut icon" href="https://fatecitu.edu.br/blog/wp-content/uploads/2021/11/favicon.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quantity.css">
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-1.jpg" alt="Prato 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-2.jpg" alt="Prato 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-3.jpg" alt="Prato 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-4.jpg" alt="Prato 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-5.jpg" alt="Prato 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-6.jpg" alt="Prato 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-7.jpg" alt="Prato 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/food-8.jpg" alt="Prato 3" />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <h1>Menu: Faça a sua escolha!</h1>
+    
+      <!-- ========== PRATO PRINCIPAL ==========-->
+      <section class="section">
+        <h2>Prato principal</h2>
+        <h3>Todos os pratos acompanham arroz, feijão e a sobremesa do dia</h3>
+
+        <div class="cards">
+          <div class="card">
+            <img src="assets/imgs/bife-com-batata.jpg" alt="Bife com batata" />
+            <h3 class="card-title">Bife com batata</h3>
+            <p class="preco">R$ 30,00</p>
+
+            <div style="text-align: center;">
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus" />
+                <input 
+                  type="number" 
+                  step="1" 
+                  min="0" 
+                  id="1" 
+                  name="quantity" 
+                  value="0" 
+                  title="Qty"
+                  class="input-text qty text" 
+                  size="4" 
+                />
+                <input type="button" value="+" class="plus" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/imgs/coxa-crocante.jpg" alt="Coxa crocante" />
+            <h3 class="card-title">Coxa crocante</h3>
+            <p class="preco">R$ 25,00</p>
+
+            <div style="text-align: center;">
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus" />
+                <input 
+                  type="number" 
+                  step="1" 
+                  min="0" 
+                  id="2" 
+                  name="quantity" 
+                  value="0" 
+                  title="Qty"
+                  class="input-text qty text" 
+                  size="4" 
+                />
+                <input type="button" value="+" class="plus">
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/imgs/carne-de-panela.jpg" alt="Carne de panela" />
+            <h3 class="card-title">Carne de panela</h3>
+            <p class="preco">R$ 22,00</p>
+            
+            <div style="text-align: center;">
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus" />
+                <input 
+                  type="number" 
+                  step="1" 
+                  min="0" 
+                  id="3" 
+                  name="quantity" 
+                  value="0" 
+                  title="Qty"
+                  class="input-text qty text" 
+                  size="4" 
+                />
+                <input type="button" value="+" class="plus">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ACOMPANHAMENTOS ==========-->
+      <section class="section">
+        <h2>Acompanhamentos</h2>
+        <h3>Porçoes para uma pessoa</h3>
+
+        <div class="cards">
+          <div class="card">
+            <img src="assets/imgs/farofa.png" alt="Farofa" />
+            <h3 class="card-title">Farofa</h3>
+            <p class="preco">R$ 10,00</p>
+
+            <div style="text-align: center;">
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus" />
+                <input 
+                  type="number" 
+                  step="1" 
+                  min="0" 
+                  id="4" 
+                  name="quantity" 
+                  value="0" 
+                  title="Qty"
+                  class="input-text qty text" 
+                  size="4" 
+                />
+                <input type="button" value="+" class="plus" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/imgs/salada.jpg" alt="Salada" />
+            <h3 class="card-title">Salada</h3>
+            <p class="preco">R$ 8,00</p>
+
+            <div style="text-align: center;">
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus" />
+                <input 
+                  type="number" 
+                  step="1" 
+                  min="0" 
+                  id="5" 
+                  name="quantity" 
+                  value="0" 
+                  title="Qty"
+                  class="input-text qty text" 
+                  size="4" 
+                />
+                <input type="button" value="+" class="plus" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/imgs/torresmo.jpg" alt="Torresmo" />
+            <h3 class="card-title">Torresmo</h3>
+            <p class="preco">R$ 12,00</p>
+
+            <div style="text-align: center;">
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus" />
+                <input 
+                  type="number" 
+                  step="1" 
+                  min="0" 
+                  id="6" 
+                  name="quantity" 
+                  value="0" 
+                  title="Qty"
+                  class="input-text qty text" 
+                  size="4" 
+                />
+                <input type="button" value="+" class="plus" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== DADOS PESSOAIS ==========-->
+      <section class="section" id="dados-pessoais">
+        <h2>Dados pessoais</h2>
+
+        <input type="text" id="name" placeholder="Digite o seu nome" />
+        <input type="text" id="phone" placeholder="Digite o seu telefone" />
+        <input type="text" id="email" placeholder="Digite o seu email" />
+
+        <button onclick="calcular()">Calcular</button>
+      </section>
+
+      <!-- ========== OUTPUT ==========-->
+      <div id="output"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <script src="js/quantity/jquery-3.6.0.min.js"></script>
+    <script src="js/quantity/quantity.js"></script>
+  </body>
+</html>
