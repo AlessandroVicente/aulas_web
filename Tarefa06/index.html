@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 6</title>
+
+    <!-- Favico -->
+    <link rel="shortcut icon" href="https://fatecitu.edu.br/blog/wp-content/uploads/2021/11/favicon.png"
+        type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quantity.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--===== NavBar ======-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Restaurante Boa Comida</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cardápios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Search">
+                        <button class="btn btn-secondary" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--===== Carousel ======-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/imgs/food-1.jpg" class="d-block w-100" alt="food-1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/food-2.jpg" class="d-block w-100" alt="food-2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/food-3.jpg" class="d-block w-100" alt="food-3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h1>Menu: Faça a sua escolha!</h1>
+
+        <!-- ========== PRATO PRINCIPAL ==========-->
+        <div class="row">
+            <h2 class="text-center">Prato principal</h2>
+            <p class="text-center">Todos os pratos acompanham arroz, feijão e a sobremesa do dia</p>
+        </div>
+
+
+        <div class="row justify-content-center gap-5">
+
+            <div class="card col-3">
+                <img src="assets/imgs/bife-com-batata.jpg" alt="Bife com batata" class="card-img-top" />
+                <div class="card-body">
+                    <h3 class="card-title text-center">Bife com batata</h3>
+                    <p class="card-text text-center">R$ 30,00</p>
+
+                    <div style="text-align: center;">
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus" />
+                            <input type="number" step="1" min="0" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" />
+                            <input type="button" value="+" class="plus" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-3">
+                <img src="assets/imgs/coxa-crocante.jpg" alt="Coxa crocante" class="card-img-top" />
+                <h3 class="card-body text-center">Coxa crocante</h3>
+                <p class="card-text text-center">R$ 25,00</p>
+
+                <div style="text-align: center;">
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus" />
+                        <input type="number" step="1" min="0" id="2" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" />
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-3">
+                <img src="assets/imgs/carne-de-panela.jpg" alt="Carne de panela" class="card-img-top" />
+                <h3 class="card-body text-center">Carne de panela</h3>
+                <p class="card-text text-center">R$ 22,00</p>
+
+                <div style="text-align: center;">
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus" />
+                        <input type="number" step="1" min="0" id="3" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" />
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========== ACOMPANHAMENTOS ==========-->
+        <div class="row">
+            <h2 class="text-center">Acompanhamentos</h2>
+            <p class="text-center">Porçoes para uma pessoa</p>
+        </div>
+
+        <div class="row justify-content-center gap-5">
+
+            <div class="card col-3">
+                <img src="assets/imgs/farofa.png" alt="Farofa" class="card-img-top" />
+                <h3 class="card-body text-center">Farofa</h3>
+                <p class="card-text text-center">R$ 10,00</p>
+
+                <div style="text-align: center;">
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus" />
+                        <input type="number" step="1" min="0" id="4" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" />
+                        <input type="button" value="+" class="plus" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-3">
+                <img src="assets/imgs/salada.jpg" alt="Salada" class="card-img-top" />
+                <h3 class="card-body text-center">Salada</h3>
+                <p class="card-text text-center">R$ 8,00</p>
+
+                <div style="text-align: center;">
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus" />
+                        <input type="number" step="1" min="0" id="5" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" />
+                        <input type="button" value="+" class="plus" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-3">
+                <img src="assets/imgs/torresmo.jpg" alt="Torresmo" class="card-img-top" />
+                <h3 class="card-body text-center">Torresmo</h3>
+                <p class="card-text text-center">R$ 12,00</p>
+
+                <div style="text-align: center;">
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus" />
+                        <input type="number" step="1" min="0" id="6" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" />
+                        <input type="button" value="+" class="plus" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========== DADOS PESSOAIS ==========-->
+        <div class="shadow p-3 mb-5 bg-body rounded container" >
+            <h2>Dados pessoais</h2>           
+            <input class="form-control" type="text" id="name" placeholder="Digite o seu nome" aria-label="default input example" />
+            <input class="form-control" type="text" id="phone" placeholder="Digite o seu telefone" aria-label="default input example"/>
+            <input class="form-control" type="text" id="email" placeholder="Digite o seu email" aria-label="default input example"/>
+            <button class="btn btn-primary" onclick="calcular()" data-bs-toggle="modal" data-bs-target="#modalexemplo">Calcular</button>
+        </div>
+
+
+
+        <!-- ========== modal ==========-->
+        <div class="modal" tabindex="-1" id="modalexemplo">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Total do Pedido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="output">Selecione pelo menos um prato</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/quantity/jquery-3.6.0.min.js"></script>
+    <script src="js/quantity/quantity.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
